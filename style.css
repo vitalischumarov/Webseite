@@ -14,13 +14,14 @@ ul {
 
 li {
   display: inline-block;
-  margin: 30px;
+  margin: 10px;
 }
 
 li > a {
   color: white;
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
 }
 
 li > a:hover {
