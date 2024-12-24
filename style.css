@@ -6,6 +6,7 @@
 
 body {
   background-color: rgb(24 24 26);
+  --primary-color: rgb(255 48 49);
 }
 
 /* HERO SECTION */
@@ -54,7 +55,6 @@ body {
 
 #introduction {
   color: lightgray;
-  font-size: 1.5rem;
   font-style: normal;
 }
 
@@ -64,8 +64,13 @@ body {
   text-decoration: none;
 }
 
+.navlink {
+  letter-spacing: 0.1rem;
+}
+
 .navlink:hover {
   color: rgb(255 48 49);
+  transition: color 0.2s ease-in-out;
 }
 
 #open-times {
@@ -78,7 +83,14 @@ body {
 }
 
 #open-times:hover {
-  color: rgb(255 48 49);
-  border: solid rgb(255 48 49) 1px;
+  color: var(--primary-color);
+  border: solid var(--primary-color) 1px;
   background-color: transparent;
+  transition: color 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 408px) {
+  .navlink {
+    width: 80px;
+  }
 }
